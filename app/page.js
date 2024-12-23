@@ -26,6 +26,180 @@ export default function Home() {
 
         <section className="py-20 bg-white">
           <div className="container mx-auto px-6">
+            <h2 className="text-3xl font-bold text-center mb-16 font-poppins text-black">
+              Domain Management
+            </h2>
+            <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
+              <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 font-poppins text-black">
+                  Get a New Domain
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Find and register your perfect domain name
+                </p>
+                <div className="space-y-4">
+                  <div className="flex gap-2">
+                    <input
+                      type="text"
+                      placeholder="Enter your domain name"
+                      className="flex-1 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                    <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                      Search
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2">
+                    <div className="text-center p-2 border rounded-lg">
+                      <p className="text-sm text-gray-600 font-poppins text-black">
+                        .com
+                      </p>
+                      <p className="font-semibold font-poppins text-black">
+                        €9.99/yr
+                      </p>
+                    </div>
+                    <div className="text-center p-2 border rounded-lg">
+                      <p className="text-sm text-gray-600 font-poppins text-black">
+                        .net
+                      </p>
+                      <p className="font-semibold font-poppins text-black">
+                        €8.99/yr
+                      </p>
+                    </div>
+                    <div className="text-center p-2 border rounded-lg">
+                      <p className="text-sm text-gray-600 font-poppins text-black">
+                        .org
+                      </p>
+                      <p className="font-semibold font-poppins text-black">
+                        €10.99/yr
+                      </p>
+                    </div>
+                    <div className="text-center p-2 border rounded-lg">
+                      <p className="text-sm text-gray-600 font-poppins text-black">
+                        .io
+                      </p>
+                      <p className="font-semibold font-poppins text-black">
+                        €29.99/yr
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 className="text-xl font-semibold mb-4 font-poppins text-black">
+                  Connect Existing Domain
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Use your own domain with our hosting
+                </p>
+                <div className="space-y-6">
+                  <div className="space-y-2">
+                    <input
+                      type="text"
+                      placeholder="Enter your existing domain"
+                      className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    />
+                  </div>
+                  <div className="bg-blue-50 p-4 rounded-lg">
+                    <h4 className="font-semibold mb-2">Quick Setup Steps:</h4>
+                    <ul className="text-sm text-gray-600 space-y-2">
+                      <li className="flex items-start">
+                        <span className="text-blue-600 mr-2">1.</span>
+                        Add our nameservers to your domain registrar
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-600 mr-2">2.</span>
+                        Verify domain ownership
+                      </li>
+                      <li className="flex items-start ">
+                        <span className="text-blue-600 mr-2">3.</span>
+                        We'll handle SSL and DNS configuration
+                      </li>
+                    </ul>
+                  </div>
+                  <button className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition w-full">
+                    Connect Domain
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mt-16">
+              <div className="text-center">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="font-semibold mb-2 font-poppins text-black">
+                  Free SSL Certificate
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Automatic HTTPS for all domains
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+                <h3 className="font-semibold mb-2 font-poppins text-black">
+                  Quick Propagation
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Fast DNS updates worldwide
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg
+                    className="w-6 h-6 text-blue-600"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                    />
+                  </svg>
+                </div>
+                <h3 className="font-semibold mb-2 font-poppins text-black">
+                  Auto Renewal
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Never worry about expiration
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-16 text-black">
               Why Choose Us?
             </h2>
